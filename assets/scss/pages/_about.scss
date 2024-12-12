@@ -1,0 +1,56 @@
+.passion {
+    .woman {
+        width: 80%;
+        height: 800px;
+
+        @media screen and (max-width: $breakpoint-mobile) {
+            height: 520px !important;
+        }
+    }
+
+    h1 {
+        width: 40%;
+        top: 60%;
+        padding-bottom: 20px;
+        text-align: $align-left;
+        position: $position-absolute;
+
+        @media screen and (max-width: $breakpoint-mobile) {
+            width: 90% !important;
+            top: 50% !important;
+        }
+
+        @media screen and (max-width: $breakpoint-tablet) {
+            top: 40%;
+            width: 70%;
+        }
+    }
+}
+
+.values,
+.contact,
+.all-projects {
+    .decor {
+        width: 30%;
+        margin-top: -30%;
+        position: $position-absolute;
+
+        @media screen and (max-width: $breakpoint-mobile) {
+            width: 60% !important;
+            margin-top: -55% !important;
+        }
+
+        @media screen and (max-width: $breakpoint-tablet) {
+            width: 50%;
+            margin-top: -40%;
+        }
+    }
+
+    .decor-one {
+        right: 0rem;
+    }
+
+    .decor-two {
+        left: 0rem;
+    }
+}

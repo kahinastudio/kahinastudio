@@ -1,0 +1,83 @@
+// Fonts 
+
+$font-title: "Faculty Glyphic", serif;
+$font-subtitle: "Montaga", serif;
+$font-text: "Nunito Sans", serif;
+
+// Titles 
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 400;
+    width: $width-max;
+    word-wrap: break-word;
+    letter-spacing: $spacing-title;
+    text-transform: $text-transform-uppercase;
+    font-family: $font-title;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+.subtitle {
+    z-index: 20;
+    position: $position-relative;
+}
+
+h1 {
+    font-size: 58px;
+
+    @media screen and (max-width: $breakpoint-mobile) {
+        font-size: 34px !important;
+    }
+}
+
+h2 {
+    font-size: 54px;
+
+    @media screen and (max-width: $breakpoint-mobile) {
+        font-size: 33px !important;
+    }
+}
+
+h3 {
+    font-size: 53px;
+
+    @media screen and (max-width: $breakpoint-mobile) {
+        font-size: 32px !important;
+    }
+}
+
+h4 {
+    font-size: 48px;
+
+    @media screen and (max-width: $breakpoint-mobile) {
+        font-size: 33px !important;
+    }
+}
+
+.subtitle {
+    font-size: 18px !important;
+    font-weight: 700;
+    font-family: $font-subtitle;
+    text-transform: $text-transform-uppercase;
+}
+
+p {
+    font-weight: 300;
+    font-size: $font-size-text;
+    letter-spacing: $spacing-text;
+    font-family: $font-text;
+
+    strong {
+        font-weight: 700;
+    }
+}

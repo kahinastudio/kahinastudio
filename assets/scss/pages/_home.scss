@@ -1,0 +1,49 @@
+.introduction {
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top center;
+    background-image: url("../../../kahinastudio/assets/img/background/landscape-woman-desert.webp");
+}
+
+.who {
+    .woman {
+        height: 800px;
+
+        @media screen and (max-width: $breakpoint-mobile) {
+            height: 480px !important;
+        }
+    }
+
+    .decor {
+        right: 0rem;
+
+        @media screen and (max-width: $breakpoint-tablet) {
+            right: 0rem;
+            margin-top: -30%;
+        }
+    }
+}
+
+.who,
+.projects,
+.contact {
+    .decor {
+        width: 30%;
+        right: 0rem;
+        position: $position-absolute;
+
+        @media screen and (max-width: $breakpoint-tablet) {
+            width: 80%;
+            margin-top: -30%;
+        }
+    }
+}
+
+.projects {
+    .decor {
+        left: 0rem;
+        margin-top: -30%;
+    }
+}

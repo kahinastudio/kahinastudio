@@ -1,0 +1,48 @@
+@import "../base/typography.scss";
+
+// Brand 
+
+@mixin brand {
+    letter-spacing: $spacing-name;
+    text-transform: $text-transform-uppercase;
+    font-family: $font-title;
+}
+
+// Link 
+
+@mixin links {
+    font-size: 90px;
+    letter-spacing: 1.3px;
+    text-transform: $text-transform-uppercase;
+    font-family: $font-title;
+    transition: $transition-ease-in-out !important;
+
+    @media screen and (max-width: $breakpoint-mobile) {
+        font-size: 30px !important;
+    }
+
+    @media screen and (max-width: $breakpoint-tablet) {
+        font-size: 62px;
+    }
+
+    .number,
+    .icon-arrow {
+        font-size: 28px;
+        font-weight: 300;
+
+        @media screen and (max-width: $breakpoint-mobile) {
+            font-size: 20px !important;
+        }
+
+        @media screen and (max-width: $breakpoint-tablet) {
+            font-size: 25px;
+        }
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $color-sugar;
+        font-style: italic;
+    }
+}

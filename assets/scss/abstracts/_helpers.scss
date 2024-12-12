@@ -1,0 +1,133 @@
+@import "mixins.scss";
+
+// Colors
+
+.color-caput {
+    color: $color-caput !important;
+}
+
+.color-smoke {
+    color: $color-smoke !important;
+}
+
+.color-night {
+    color: $color-night !important;
+}
+
+.color-coffee {
+    color: $color-coffee !important;
+}
+
+.color-sugar {
+    color: $color-sugar !important;
+}
+
+// Background 
+
+.background-caput {
+    background-color: $background-caput !important;
+}
+
+.background-smoke {
+    background-color: $background-smoke !important;
+}
+
+.background-night {
+    background-color: $background-night !important;
+}
+
+.background-coffee {
+    background-color: $background-coffee !important;
+}
+
+.background-sugar {
+    background-color: $background-sugar !important;
+}
+
+// Space 
+
+.flex-between {
+    display: $display-flex;
+    justify-content: $space-between;
+}
+
+// Brand 
+
+.brand {
+    @include brand;
+}
+
+// Text 
+
+.padding-text {
+    padding: 5rem;
+
+    @media screen and (max-width: $breakpoint-mobile) {
+        padding: 5rem 0rem !important;
+    }
+
+    @media screen and (max-width: $breakpoint-tablet) {
+        padding: 5rem 2rem;
+    }
+}
+
+// Margin 
+
+.margin-xs {
+    margin-top: $margin-xs;
+}
+
+.margin-s {
+    margin-top: $margin-s;
+}
+
+.margin-m {
+    margin-top: $margin-m;
+}
+
+// Text 
+
+.justify-text {
+    text-align: $align-justify;
+}
+
+.left-text {
+    text-align: $align-left !important;
+}
+
+.uppercase {
+    text-transform: $text-transform-uppercase;
+}
+
+// Border
+
+.border-night { 
+    border-bottom: $border-night !important;
+}
+
+.border-sugar { 
+    border-bottom: $border-sugar !important;
+}
+
+// line 
+
+.line-with-text {
+    font-size: 23px !important;
+    align-items: $align-center;
+    text-align: $align-center;
+    display: $display-flex;
+    font-family: $font-subtitle;
+
+    &::after {
+        content: "";
+        flex: 1;
+        margin: 0 10px;
+        border-bottom: $border-night;
+    }
+}
+
+.line-smoke {
+    &::after {
+        border-bottom: $border-smoke !important;
+    }
+}
